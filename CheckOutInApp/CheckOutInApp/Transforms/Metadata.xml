@@ -1,0 +1,47 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.wallet.vo']/class[@name='OperationResult.OperationResultStatus']/field[@name='OperationResultStatus']"
+			name="managedName">ResultOperationStatus</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.register.api']/class[@name='Configuration']/method[@name='getApi' and count(parameter)=0]"
+			name="managedReturn">BR.Com.Uol.Pslibs.Checkout_in_app.Register.Api.RegisterApi</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.register']/class[@name='SafePayRegister']/method[@name='getApi' and count(parameter)=0]"
+			name="managedReturn">BR.Com.Uol.Pslibs.Checkout_in_app.Register.Api.RegisterApi</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.wallet.api']/class[@name='WalletLibApp']/method[@name='getApi' and count(parameter)=0]"
+			name="managedReturn">BR.Com.Uol.Pslibs.Checkout_in_app.Wallet.Api.WalletApi</attr>
+
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSCheckoutListener']/method[@name='onFailure']"
+			name="argsType">OnPSCheckoutListenerFailure</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSCheckoutListener']/method[@name='onSuccess']"
+			name="argsType">OnPSCheckoutListenerSuccess</attr>
+
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSBilletListener']/method[@name='onFailure']"
+			name="argsType">OnPSBilletListenerFailure</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSBilletListener']/method[@name='onSuccess']"
+			name="argsType">OnPSBilletListenerSuccess</attr>
+
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSInstallmentsListener']/method[@name='onFailure']"
+			name="argsType">OnPSInstallmentsListenerFailure</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSInstallmentsListener']/method[@name='onSuccess']"
+			name="argsType">OnPSInstallmentsListenerSuccess</attr>
+
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSSearchAddressListener']/method[@name='onFailure']"
+			name="argsType">OnPSSearchAddressListenerFailure</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.transparent.listener']/interface[@name='PSSearchAddressListener']/method[@name='onSuccess']"
+			name="argsType">OnPSSearchAddressListenerSuccess</attr>
+
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.pscard.manager']/interface[@name='PSCard.PSCardListener']/method[@name='onError']"
+			name="argsType">OnPSCardListenerError</attr>
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.pscard.manager']/interface[@name='PSCard.PSCardListener']/method[@name='onSuccess']"
+			name="argsType">OnPSCardListenerSuccess</attr>
+
+	<attr path="/api/package[@name='br.com.uol.pslibs.checkout_in_app.wallet.listener']/interface[@name='PSCheckoutListener']/method[@name='onSuccess']"
+				name="argsType">OnPSCheckoutListenerSuccess</attr>
+</metadata>
+
+
